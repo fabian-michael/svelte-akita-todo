@@ -26,7 +26,7 @@
 <div class="flex items-center py-2 my-2 leading-none todo-item" on:mouseover={() => showDelete = true} on:mouseout={() => showDelete = false}>
     <button 
         on:click={handleToggle} 
-        class="p-1 mr-4 text-center bg-gray-300 rounded-full focus:outline-none focus:shadow-outline" 
+        class="p-1 mr-4 text-center bg-gray-300 rounded-full" 
         class:text-transparent={!todo.done}
         class:text-white={todo.done}
         class:bg-green-500={todo.done}
