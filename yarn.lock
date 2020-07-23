@@ -5078,6 +5078,11 @@ svelte-dev-helper@^1.1.9:
   resolved "https://registry.yarnpkg.com/svelte-dev-helper/-/svelte-dev-helper-1.1.9.tgz#7d187db5c6cdbbd64d75a32f91b8998bde3273c3"
   integrity sha1-fRh9tcbNu9ZNdaMvkbiZi94yc8M=
 
+svelte-feather-icons@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/svelte-feather-icons/-/svelte-feather-icons-3.2.2.tgz#fdb4ecc7ac9127442d06d8bbeee52d3be0491834"
+  integrity sha512-GY86mGZYjZCRRnY2t5caiY+2gzSWrYvG8dUjhnOi6YlaWVZEAzDOBuTDiZ1abOz2mM9fCpdpbgj1JZajjzEEAw==
+
 svelte-language-server@*:
   version "0.10.74"
   resolved "https://registry.yarnpkg.com/svelte-language-server/-/svelte-language-server-0.10.74.tgz#3752415043a119c7ef0437c1f35ea4e7c941cc26"

@@ -3,10 +3,13 @@
     import {Todo} from '../state/todos.store';
 
     export let todos: Todo[];
+
 </script>
 
-<ul>
-    {#each todos as todo}
-        <TodoItem {todo} />
+<ul class="px-4 bg-white rounded-lg shadow-xl">
+    {#each todos as todo (todo.id)}
+        <li>
+            <TodoItem {todo} />
+        </li>
     {/each}
 </ul>

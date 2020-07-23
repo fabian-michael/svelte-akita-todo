@@ -59,17 +59,15 @@
 			</TabList>
 
 			<TabPanel>
-				<h2>All Todos</h2>
-				<TodoList todos={all} />
+				<TodoList todos={open} />
+				<TodoList todos={done} />
 			</TabPanel>
 
 			<TabPanel>
-				<h2>Open Todos</h2>
 				<TodoList todos={open} />
 			</TabPanel>
 
 			<TabPanel>
-				<h2>Done Todos</h2>
 				<TodoList todos={done} />
 			</TabPanel>
 		</Tabs>
