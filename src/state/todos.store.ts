@@ -1,6 +1,10 @@
 import { produce, Draft } from 'immer';
 import {v4 as uuid} from 'uuid';
-import { EntityState, createEntityStore, createEntityQuery } from '@datorama/akita';
+import { EntityState, createEntityStore, createEntityQuery, akitaDevtools } from '@datorama/akita';
+
+akitaDevtools({
+
+});
 
 // 1️⃣ Declare types 
 // --------------------------------------------------------
@@ -47,6 +51,10 @@ export const addTodo = (title: string) => {
     })
 }
 
+export const removeTodo = (id: string) => {
+    store.remove(id);
+}
+
 /** Toggles the done status by id */
 export const toggleDone = (id: string) => {
     store.update(id, todo => {
@@ -59,6 +67,7 @@ export const reset = () => store.reset();
 
 export const todosApi = {
     addTodo,
+    removeTodo,
     toggleDone,
     reset
 }
