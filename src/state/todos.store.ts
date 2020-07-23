@@ -1,6 +1,7 @@
 import { produce, Draft } from 'immer';
 import {v4 as uuid} from 'uuid';
 import { EntityState, createEntityStore, createEntityQuery } from '@datorama/akita';
+
 // 1️⃣ Declare types 
 // --------------------------------------------------------
 
@@ -10,7 +11,6 @@ export type Todo = {
     done: boolean;
 }
 export interface TodoState extends EntityState<Todo, string> {}
-
 
 // 2️⃣ Create store 
 // --------------------------------------------------------
