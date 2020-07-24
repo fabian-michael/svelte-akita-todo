@@ -1,5 +1,2 @@
-import CTodoItem from './TodoItem.svelte';
-import CTodoList from './TodoList.svelte';
-
-export const TodoItem = CTodoItem;
-export const TodoList = CTodoList;
+export {default as TodoItem} from './TodoItem.svelte';
+export {default as TodoList} from './TodoList.svelte';
