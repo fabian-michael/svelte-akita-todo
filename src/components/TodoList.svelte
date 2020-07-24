@@ -8,8 +8,6 @@
 
 <ul class="px-4 bg-white rounded-lg shadow-xl">
     {#each todos as todo (todo.id)}
-        <li>
-            <TodoItem {todo} />
-        </li>
+        <TodoItem {todo} />
     {/each}
 </ul>

@@ -23,7 +23,7 @@
     }
 </style>
 
-<div class="flex items-center py-2 my-2 leading-none todo-item" on:mouseover={() => showDelete = true} on:mouseout={() => showDelete = false}>
+<li class="flex items-center py-2 my-2 leading-none todo-item" on:mouseover={() => showDelete = true} on:mouseout={() => showDelete = false}>
     <button 
         on:click={handleToggle} 
         class="p-1 mr-4 text-center bg-gray-300 rounded-full" 
@@ -37,4 +37,4 @@
     </button> 
     <span class="flex-1" class:line-through={todo.done} class:text-gray-500={todo.done}>{todo.title}</span> 
     <button on:click={handleDelete} class="p-1 ml-2 text-white bg-red-500 rounded-full delete" class:opacity-0={!showDelete}><TrashIcon size="1x" /></button>
-</div>
+</li>
