@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@datorama/akita": "^5.2.1",
-    "immer": "^7.0.5",
+    "immer": "^9.0.6",
     "rxjs": "^6.6.0",
     "sirv-cli": "^1.0.3",
     "svelte-feather-icons": "^3.2.2",
